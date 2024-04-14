@@ -1,0 +1,36 @@
+{
+    "manifest_version": 2,
+    "name": "Hedgedoc to GitHub",
+    "description": "This extention helps backing up Hedgedoc Documents to Github",
+    "version": "1.0",
+    "author": "Luca Großhennig",
+    "icons": {
+        "48": "icons/icon48.png"
+    },
+    "browser_action": {
+        "default_title": "Dare Angel",
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "19": "icons/icon19.png",
+            "32": "icons/icon32.png",
+            "38": "icons/icon38.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        },
+        "default_popup": "dashboard.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://md.fachschaften.org/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "permissions": [
+        "activeTab"
+    ]
+}
