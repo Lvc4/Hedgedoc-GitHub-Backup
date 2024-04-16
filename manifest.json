@@ -7,6 +7,12 @@
     "icons": {
         "48": "icons/icon48.png"
     },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "Hedgedoc_2_github@example.de",
+            "strict_min_version": "42.0"
+        }
+    },
     "browser_action": {
         "default_title": "Dare Angel",
         "default_icon": {
@@ -31,6 +37,7 @@
         }
     ],
     "permissions": [
-        "activeTab"
+        "activeTab",
+        "storage"
     ]
 }
