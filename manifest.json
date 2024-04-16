@@ -14,7 +14,7 @@
         }
     },
     "browser_action": {
-        "default_title": "Dare Angel",
+        "default_title": "Hedgedoc to GitHub",
         "default_icon": {
             "16": "icons/icon16.png",
             "19": "icons/icon19.png",
